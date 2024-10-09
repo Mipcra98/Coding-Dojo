@@ -1,0 +1,77 @@
+.formulario{
+    margin: 0 auto;
+    color: black;
+    font-weight: bold;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: #F2F2F2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.formulario div{
+    margin: 1em auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.formulario div div{
+    background-color: #fa5656;
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px #000000
+}
+
+.formulario input{
+    background-color: #fa5656;
+    box-shadow: inset 0 0 10px #000000;
+    
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #000000;
+    margin: 5px 0;
+}
+
+.formulario textarea{
+    background-color: #fa5656;
+    box-shadow: inset 0 0 10px #000000;
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    margin: 5px 0;
+}
+
+.formulario select{
+    background-color: #c02b2b;
+    box-shadow: inset 0 0 10px #000000;
+    text-align: center;
+    width: 50%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    margin: 5px 0;
+}
+
+.formulario button{
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #c02b2b;
+    box-shadow: inset 0 0 10px #000000;
+}

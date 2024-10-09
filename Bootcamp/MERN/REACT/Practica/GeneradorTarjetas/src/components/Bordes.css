@@ -1,0 +1,53 @@
+.borderSolid{
+    padding: 5px;
+    margin: 0 auto;
+    border: 5px solid #000000;
+}
+
+.borderDotted{
+    padding: 5px;
+    margin: 0 auto;
+    border: 5px dotted #000000;
+}
+
+.borderDouble{
+    padding: 5px;
+    margin: 0 auto;
+    border: 5px double #000000;
+}
+
+.borderDashed{
+    padding: 5px;
+    margin: 0 auto;
+    border: 5px dashed #000000;
+}
+
+.borderGroove{
+    padding: 5px;
+    margin: 0 auto;
+    border: 5px groove #000000;
+}
+
+.borderRidge{
+    padding: 5px;
+    margin: 0 auto;
+    border: 5px ridge #000000;
+}
+
+.borderInset{
+    padding: 5px;
+    margin: 0 auto;
+    border: 5px inset #000000;
+}
+
+.borderOutset{
+    padding: 5px;
+    margin: 0 auto;
+    border: 5px outset #000000;
+}
+
+.borderNone{
+    padding: 10px;
+    margin: 0 auto;
+    border: none;
+}

@@ -1,0 +1,20 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.titulo{
+  color:#131389;
+  margin: 0 auto;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.productList{
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}

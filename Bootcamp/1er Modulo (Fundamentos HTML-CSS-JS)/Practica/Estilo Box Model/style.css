@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h3{
+    margin: 2vh;
+    text-decoration: underline wavy black;
+}
+
+section {
+    margin: 1vh 2vw;
+}
+
+span{
+    vertical-align: top;
+    margin: 1vh;
+    padding: 2vh;
+    width: 30%;
+    display: inline-block;
+    color: white;
+}
+
+.first{
+    background-color: lightseagreen;
+}
+
+.second{
+    background-color: fuchsia;
+}
+
+.third{
+    background-color: darkblue;
+}

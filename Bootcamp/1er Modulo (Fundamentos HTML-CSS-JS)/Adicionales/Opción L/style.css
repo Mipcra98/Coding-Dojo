@@ -1,0 +1,199 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    width: 100%;
+    display: flex;
+}
+
+aside {
+    padding: 1rem;
+    width: 20%;
+    height: 100vh;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px black;
+}
+
+.logo {
+    width: 70%;
+}
+
+.about-info {
+    font-weight: 600;
+    font-size: large;
+    padding: 0.8rem;
+}
+
+.about-info ul {
+    padding: 1rem 1rem 0px;
+}
+
+.locations {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.locations img {
+    padding: 1rem;
+    width: 100%;
+    height: 12rem;
+}
+
+.about-info a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    width: 100%;
+    padding: 1rem;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.video {
+    margin: 1rem auto;
+    width: 100%;
+}
+
+.video video {
+    width: 100%;
+    height: 20rem;
+}
+
+.poke {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box {
+    width: 45%;
+    padding: 1vh;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: larger;
+    color: white;
+    box-shadow: 0px 0px 10px black;
+}
+
+.box img {
+    width: 100%;
+    height: 15rem;
+}
+
+.hazloTu {
+    padding: 1rem;
+    background-color: #2b78e4;
+    font-weight: 600;
+}
+
+.poke-ingredients {
+    display: flex;
+    padding: 1rem;
+    justify-content: right;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 1rem;
+}
+
+.number {
+    box-shadow: 0px 0px 10px black;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2b78e4;
+    background-color: white;
+    border-radius: 100%;
+    font-size: 2rem;
+}
+
+.protein,  .base ,.marinade{
+    visibility: hidden;
+}
+
+.poke-one{
+    flex: 0;
+    display: flex;
+    margin: 0 0.5rem;
+    justify-content: right;
+}
+
+.poke-two{
+    flex: 1;
+    display: flex;
+    margin: 0 0.5rem;
+    justify-content: right;
+}
+
+.poke-three{
+    flex: 2;
+    display: flex;
+    margin: 0 0.5rem;
+    justify-content: right;
+}
+
+.poke-text {
+    flex: 5;
+}
+
+.poke-text p{
+    font-size: 1rem;
+}
+
+.historia{
+    background-color: #cf2a27;
+    font-weight: 600;
+}
+
+.historia-titulos{
+    display: flex;
+    margin: 1rem;
+}
+
+.historia h1{
+    flex:1;
+}
+
+.historia h2{
+    align-self: flex-end;
+    color: lightgray;
+}
+
+.historia em{
+    margin: 1rem;
+}
+
+.historia-texto{
+    margin: 1rem;
+}
+
+.historia button{
+    margin: 1rem auto;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    border: 2px solid black;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px black;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    margin-right: 1rem;
+}
+
+.historia button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.historia button img{
+    width: 100%;
+    height: 100%;
+}
+

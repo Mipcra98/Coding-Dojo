@@ -1,0 +1,53 @@
+/* Reset CSS simple */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 10px;
+}
+
+
+button,
+input[type="text"] {
+    padding: 10px;
+}
+
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+#surpriseImage {
+    display: none;
+    /* Inicialmente oculto */
+    width: 150px;
+    /* Ancho inicial */
+    height: auto;
+    /* Altura automática para mantener la proporción */
+}
+
+
+#colorInput {
+    margin-top: 20px;
+}

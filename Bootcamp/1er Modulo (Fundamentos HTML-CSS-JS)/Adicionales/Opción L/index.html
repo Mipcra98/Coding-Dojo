@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Opción L - Poke Bowl</title>
+</head>
+
+<body>
+    <aside>
+        <img src="./media/logo.png" alt="Poke Bowl Logo" class="logo">
+        <h2>About us</h2>
+        <ul>
+            <li class="about-info">Menu</li>
+            <li class="about-info">Catering</li>
+            <li class="about-info">Hours
+                <ul class="about-hours">
+                    <li class="info-hours">mon - fri : <span>11am - 10pm</span></li>
+                    <li class="info-hours">sat : <span>12pm - 1am</span></li>
+                    <li class="info-hours">sun : <span>12pm - 9pm</span></li>
+                </ul>
+            </li>
+            <li class="about-info locations">Locations
+                <img src="./media/map.png" alt="Map Location">
+            </li>
+            <li class="about-info"><a href="#" onclick="number()">Contact Us</a></li>
+        </ul>
+    </aside>
+    <main>
+        <section class="video">
+            <video src="./media/video.mp4" muted autoplay loop></video>
+        </section>
+        <section class="poke">
+            <div class="box hazloTu">
+                <h1>Poke your way</h1>
+                <ul>
+                    <li class="poke-ingredients" id="protein">
+                        <div class="poke-one">
+                            <div class="number">1</div>
+                        </div>
+                        <div class="poke-text"> Chose your protein
+                            <p class="protein">salmon, tuna, tofu</p>
+                        </div>
+                    </li>
+                    <li class="poke-ingredients" id="base">
+                        <div class="poke-two">
+                            <div class="number">2</div>
+                        </div>
+                        <div class="poke-text">Pick your base
+                            <p class="base">rice, quinoa, soba noodles</p>
+                        </div>
+                    </li>
+                    <li class="poke-ingredients" id="marinade">
+                        <div class="poke-three">
+                            <div class="number">3</div>
+                        </div>
+                        <div class="poke-text">Select a marinade
+                            <p class="marinade">ponzu, sriracha aoili, sesame miso</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="box historia">
+                <div class="historia-titulos">
+                    <h1>Poke</h1>
+                    <h2>/põ'kã/</h2>
+                </div>
+                <em>noun</em>
+                <div class="historia-texto">
+                    <p>Pronounced (Po-kay)</p>
+                    <p>A popular hawaiian dishof marinated, diced raw fish served over rice</p>
+                </div>
+                <button onclick="reproducir()"><img src="./media/sound-dark.png" alt="Reproduce Sound"></button>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

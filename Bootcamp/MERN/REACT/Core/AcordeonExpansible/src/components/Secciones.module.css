@@ -1,0 +1,12 @@
+.seccion {
+    margin: 0.3rem auto;
+    width: 100%;
+    text-align: left;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #ffa500;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 5px 10px;
+}

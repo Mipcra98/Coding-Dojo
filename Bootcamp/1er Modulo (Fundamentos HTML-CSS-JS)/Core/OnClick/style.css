@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    padding: 0vh 2vw;
+}
+
+main {
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    column-gap: 3vw;
+    justify-content: center;
+    width: 90%;
+}
+
+.btn {
+    background-color: #ffffcc;
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 1vh 2vw;
+}
+
+.btn:hover {
+    background-color: #fffc47;
+}
+
+.top-nav {
+    margin: 0px auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 16px;
+    padding: 3vh 2vw;
+    background-color: #333333;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.top-nav h1 {
+    flex: 1;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.top-nav input {
+    flex: 2;
+}
+
+.top-nav button {
+    flex: 1;
+    background-color: #1e90ff;
+    color:white;
+}
+
+.top-nav button:hover {
+    background-color: #72b6fa;
+    color: white;
+}
+
+.shadow{
+    box-shadow: 0px 0px 10px gray;
+}
+
+.main-section{
+    width: 60%;
+}
+
+.pizza{
+    border-radius: 1vh;
+    padding: 1vh 2vw;
+    margin: 0vh 0vw 2vh;
+}
+
+.pizza button{
+    margin: 1vh 2vw;
+}
+
+.pizza h3{
+    color:black;
+    font-weight: bolder;
+    font-size: 3vh;
+}
+
+.pizza p{
+    margin: 2vh 0vw 1vh 2vw;
+    color: black;
+    font-weight: 400;
+    font-size: 1.8vh;
+}
+
+.side-section{
+    width: 40%;
+}
+
+.side-section-text{
+    border-radius: 1vh;
+    padding: 1vh 2vw;
+}
+
+.ti-button{
+    margin: 1vh 0vw;
+    background-color: #008000;
+    color: white;
+}
+
+.ti-button:hover{
+    color:white;
+    background-color: rgb(16, 175, 1);
+}

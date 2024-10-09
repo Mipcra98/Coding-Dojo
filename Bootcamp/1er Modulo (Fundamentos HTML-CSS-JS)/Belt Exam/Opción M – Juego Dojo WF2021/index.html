@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Opción M – Juego Dojo WF2021</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="top-nav">
+                <h1>Gaming<span>Dojo</span></h1>
+                <div class="nav-links">
+                    <select name="moneda" id="currency">
+                        <option value="usd">USD $</option>
+                        <option value="eur" selected>EUR €</option>
+                    </select>
+                    <div class="cart">
+                        <img src="./images/cart-light.png" alt="cart">
+                        <span class="cart-count">0</span>
+                    </div>
+                    <div class="search">
+                        <img src="./images/search-light.png" alt="search">
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <h1>Highlights</h1>
+            <div class="banner-lists">
+                <img src="./images/chevron-left.png" alt="Left-Button" class="nxt-btn left-btn">
+                <img class="banner-img" src="./images/stonepunk.png" alt="Stonepunk">
+                <img src="./images/chevron-left.png" alt="Right-Button" class="nxt-btn right-btn">
+            </div>
+            <div class="banner-select">
+                <span id="1" class="banner-selection"></span>
+                <span id="2" class="banner-selection" selected></span>
+                <span id="3" class="banner-selection"></span>
+            </div>
+        </section>
+        <section class="games">
+            <div class="game-card">
+                <img src="./images/cafe-neko.png" alt="Cafe Neko">
+                <h3>Cafe Neko: Gold Edition</h3>
+                <div class="game-card-info">
+                    <div class="game-SO">
+                        <img class="SO-icon" src="./images/windows.png" alt="Windows">
+                        <img class="SO-icon" src="./images/apple.png" alt="Mac">
+                    </div>
+                    <div class="buy-details">
+                        <span class="discount">-20%</span>
+                        <div class="prices">
+                            <span class="game-price-old">€14.98</span>
+                            <span class="game-price">€10.49</span>
+                        </div>
+                        <button class="buy-game">Buy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="./images/pixel-ninjas-2.png" alt="Pixel Ninjas 2">
+                <h3>Pixel Nijnas 2</h3>
+                <div class="game-card-info">
+                    <div class="game-SO">
+                        <img class="SO-icon" src="./images/windows.png" alt="Windows">
+                        <img class="SO-icon" src="./images/apple.png" alt="Mac">
+                    </div>
+                    <div class="buy-details">
+                        <span class="discount">-10%</span>
+                        <div class="prices">
+                            <span class="game-price-old">€8.19</span>
+                            <span class="game-price">€7.39</span>
+                        </div>
+                        <button class="buy-game">Buy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="./images/stonepunk.png" alt="Stonepunk">
+                <h3>Stonepunk 10000 BCE</h3>
+                <div class="game-card-info">
+                    <div class="game-SO">
+                        <img class="SO-icon" src="./images/windows.png" alt="Windows">
+                        <img class="SO-icon" src="./images/apple.png" alt="Mac">
+                        <img id="linux" class="SO-icon" src="./images/linux.png" alt="Linux">
+                    </div>
+                    <div class="buy-details">
+                        <span class="discount">NEW</span>
+                        <div class="prices">
+                            <span class="game-price">€19.99</span>
+                        </div>
+                        <button class="buy-game">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

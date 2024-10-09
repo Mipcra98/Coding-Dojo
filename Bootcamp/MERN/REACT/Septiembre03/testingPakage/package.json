@@ -1,0 +1,15 @@
+{
+  "name": "testingpakage",
+  "version": "1.0.0",
+  "description": "Prueba de NPM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Willian Führ",
+  "license": "ISC",
+  "dependencies": {
+    "testingpakage": "file:"
+  },
+  "type": "module"
+}

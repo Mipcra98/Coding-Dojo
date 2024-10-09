@@ -1,0 +1,43 @@
+/* Mejor práctica general: Comenzar con reset y box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #ecf0f1;
+}
+
+.container {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+#longTaskButton {
+    background-color: #3498db;
+    color: white;
+}
+
+#secondTaskButton {
+    background-color: #2ecc71;
+    color: white;
+}
+
+#status, #count {
+    color: #333;
+    margin-top: 10px;
+}

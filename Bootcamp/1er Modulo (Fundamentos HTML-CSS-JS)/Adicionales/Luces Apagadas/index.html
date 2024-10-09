@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luces Apagadas</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <section class="lucesApagadas">
+        <div class="game-info">
+            <h1>Luces Apagadas</h1>
+            <p>El juego consiste en apagar todas las luces (recuadros amarillos), sin embargo en pulsar en una luz se
+                alterarán las los luces de su entorno, haz tu estrategia y llega al nivel 15 para finalizar este juego
+            </p>
+            <div class="level-selector">
+                <h3>Nivel actual</h3>
+                <h3><span id="actual-level">05</span></h3>
+                <button class="level-btn mas" id="level-mas">+</button>
+                <button class="level-btn menos" id="level-menos">-</button>
+            </div>
+        </div>
+        <div class="recuadro">
+            <div class="boxes" id="box-list">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

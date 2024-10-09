@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
+    <title>Tiempo Local</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tiempo local</h1>
+        <nav>
+            <button>Buenos Aires</button>
+            <button>Ciudad de México</button>
+            <button>Santiago</button>
+            <button>São Paulo</button>
+            <button>Quito</button>
+        </nav>
+        <div class="grad-selector">
+            <label for="grad">Mostrar temperatura en </label>
+            <select name="grados" id="grad" onchange="cambiarGrad()">
+                <option value="F">ºF</option>
+                <option value="C" selected>ºC</option>
+            </select>
+        </div>
+    </header>
+    <main>
+        <section id="ciudad">
+        </section>
+    </main>
+    <footer>
+        <div class="foot">
+            <p>Hecho por <a href="https://github.com/Mipcra98">Willian Führ</a></p>
+        </div>
+        <div class="cookies">
+            <p>Detente! Tiempo de Cookies. Usamos cookies (tristemente, no las comestibles) para perzonalizar contenido
+                y anuncios, proporcionar funciones de redes sociales y analizar nuestro tráfico.
+                <a href="#">Lee
+                    más...</a>
+            </p>
+            <button>Acepto</button>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+.transitioner{
+    transition: transform 0.5s ease-in-out;
+}
+
+.transitioner:hover{
+    transform: scale(1.1);
+}

@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: #9900ff;
+    padding-top: 1vh;
+    color: white;
+}
+
+div.container {
+    background-color: black;
+}
+
+.top-nav {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    padding: 5px 1vw;
+    align-items: center;
+}
+
+.top-nav h1 {
+    flex: 2;
+    font-size: 1.8rem;
+}
+
+.top-nav h1 span {
+    color: #9900ff
+}
+
+.nav-links {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+#currency {
+    flex: 1;
+    height: 2rem;
+    margin: 1vh;
+    font-weight: bolder;
+    font-size: 2vh;
+    text-align: center;
+}
+
+.cart {
+    height: 2rem;
+    flex: 1;
+    align-items: center;
+    display: flex;
+    padding: 1vh;
+    margin: 1vh;
+    justify-content: center;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: large;
+}
+
+.cart img {
+    height: 2.8rem;
+    transform: scaleX(-1);
+}
+
+.search {
+    flex: 1;
+    height: 2rem;
+    text-align: left;
+}
+
+.search img {
+    height: 2rem;
+}
+
+body {
+    background-color: #eeeeee;
+    overflow: hidden;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1vh;
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner h1 {
+    margin: 1vh 7vw;
+    font-size: 2rem;
+}
+
+.banner-lists {
+    width: 80%;
+    margin: 0vh auto;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.nxt-btn {
+    height: 2rem;
+    width: 2rem;
+    margin: 1vh;
+}
+
+.nxt-btn:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: 0.5s ease;
+}
+
+.right-btn {
+    transform: rotate(180deg)
+}
+
+.right-btn:hover {
+    transform: scale(-1.5);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.banner-img {
+    height:100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner-select {
+    margin: 1.5rem auto;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-selection {
+    width: 20%;
+    height: 1vh;
+    background-color: #a9a9a9;
+    border-radius: 3px;
+}
+
+.banner-selection[selected] {
+    background-color: #9900ff;
+}
+
+.games {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.game-card {
+    margin: 0vh 1vw;
+    background-color: #ffffff;
+    width: 30%;
+    padding-bottom: 1vh;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.game-card img {
+    width: 100%;
+}
+
+.game-card-info{
+    padding: 0vh 1vh;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.game-card h3 {
+    margin: 1vh;
+}
+
+.game-SO {
+    display: flex;
+}
+
+.game-SO img {
+    width: 15%;
+}
+
+.buy-details{
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discount {
+    width: 5rem;
+    height: 3rem;
+    margin: 1vh;
+    text-align: center;
+    align-content: center;
+    background-color: #9900ff;
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+.game-price-old{
+    display: block;
+    text-decoration: line-through;
+    color: #a9a9a9;
+}
+
+.game-price{
+    display: block;
+    color: #000;
+}
+
+.buy-game{
+    background-color: #6aa84f;
+    border:none;
+    border-radius: 3px;
+    width: 5rem;
+    height: 3rem;
+    margin: 1vh;
+    text-align: center;
+    align-content: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: large;
+}
+
+.buy-game:hover{
+    background-color: #006400;
+}
+
+.buy-game:active{
+    transform: scale(0.9);
+    transition: 0.1s ease;
+    background-color: #006400;
+}
+
+#linux:hover{
+    background-color: #eeeeee;
+    border-radius: 100%;
+}

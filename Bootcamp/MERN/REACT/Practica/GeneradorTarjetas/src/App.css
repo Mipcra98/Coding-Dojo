@@ -1,0 +1,30 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.tarjetas{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* display: flex;
+  flex-direction: row; */
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: #8a2c2c;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px #000000;
+}

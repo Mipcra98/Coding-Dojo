@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 0 10vw;
+    background-color: #00bcd4;
+    height: 20vh;
+    margin-bottom: 25vh;
+    overflow: hidden;
+}
+
+img {
+    height: 25vh;
+    border: white solid 5px;
+    border-radius: 100%;
+    position: absolute;
+    top:10vh;
+}
+
+
+.navbar {
+    height: 25vh;
+    background-color: #00bcd4;
+}
+
+body {
+    background-color: #F2F2F2;
+    font-family: 'Ubuntu', sans-serif;
+    height: 100%;
+}
+
+main {
+    margin: 2vh;
+    background-color: white;
+    border-radius: 3vh;
+    height: 100%;
+    padding-bottom: 5vh;
+    overflow: hidden;
+}
+
+h1 {
+    position: absolute;
+    margin-top: 60vh;
+    font-size: 5vh;
+}
+
+ul {
+    list-style: none;
+    margin-top: 5vh;
+    margin-left: 10vw;
+    padding: 1vh;
+}
+
+li {
+    margin: 3vh;
+    color: gray;
+    font-size: 110%;
+    font-weight: 400;
+}
+
+button {
+    justify-self: center;
+    margin-left: 10vh;
+    margin-top: 5vh;
+    border-radius: 1vh;
+    height: 5vh;
+    width: 20vh;
+    background-color: #00bcd4;
+    color: white;
+    font-weight: bolder;
+    font-size: 2vh;
+    border: none;
+    box-shadow: 10px 10px 10px gray;
+}
+
+button:hover {
+    background-color: #0097a7;
+}
+
+button:active {
+    animation: disminuir 0.2s ease-in-out
+}
+
+@keyframes disminuir {
+    0% {
+        transform: scale(0.95);
+    }
+}
