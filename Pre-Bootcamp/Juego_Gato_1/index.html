@@ -1,0 +1,38 @@
+<html>
+
+<body>
+	<div id='background'>
+		<div id='gatito'
+			style='position:absolute; top:0px; left:0px; background: url("img/abajo1.png") no-repeat; width:60px; height:50px; background-size: contain;'>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var posicionIzq = 0, posicionArriba = 0;
+
+		function actualizar() {
+			document.getElementById("gatito").style.left = posicionIzq + "px";
+			document.getElementById("gatito").style.top = posicionArriba + "px";
+		}
+
+		document.onkeydown = function (e) {
+			if (e.keyCode > 36 && e.keyCode < 41) {
+				console.log(e);
+				if (e.keyCode == 37 && posicionIzq-10 >= 0) { // Izquierda
+					posicionIzq = posicionIzq - 10;
+				}
+				else if (e.keyCode == 38 && posicionArriba-10 >=0) { // Arriba
+					posicionArriba = posicionArriba - 10;
+				}
+				else if (e.keyCode == 39 && posicionIzq+10 <= 800) { // Derecha
+					posicionIzq = posicionIzq + 10;
+				}
+				else if (e.keyCode == 40 && posicionArriba+10 <= 800) { // Abajo
+					posicionArriba = posicionArriba + 10;
+				}
+				actualizar();
+			}
+		}
+	</script>
+</body>
+
+</html>
