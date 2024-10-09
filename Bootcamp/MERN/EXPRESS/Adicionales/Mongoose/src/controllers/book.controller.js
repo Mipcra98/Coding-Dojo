@@ -40,8 +40,12 @@ const obtenerLibroID = async (req, res) => {
 
 //Función para actualizar un libro por su ID
 const actualizarLibroID = async (req, res) => {
+    const opciones = {              //Este ers opcional, se puede pasar como objeto directamente... con estos dos comandos (new:true y runValidators:true) se vuelven a ejecutar los validadores del Modelo "LIBRO" antes de seguir con lo siguiente
+        new: true,
+        runValidators: true
+    }
     try {
-        const libro = await libro.findByIdAndUpdate(req.params.id, req.body, { new: true });
+        const libro = await libro.findByIdAndUpdate(req.params.id, req.body, opciones);
         if (!libro) {
             res.status(404).json({ message: "Libro no encontrado" });
             return;
