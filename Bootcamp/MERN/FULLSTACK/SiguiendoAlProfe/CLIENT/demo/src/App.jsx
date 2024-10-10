@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Register from "./pages/RegisterPage";
 import UserPage from "./pages/UserPage";
+import UserDetailPage from "./pages/UserDetailPage";
 
 
 function App() {
@@ -9,8 +10,9 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Register />} />
-          <Route path="/users" element={<UserPage />} />
+          <Route path="/" Component={Register} />
+          <Route path="/users" Component={UserPage} />
+          <Route path="/users/:id" Component={UserDetailPage} />
         </Routes>
       </BrowserRouter>
     </>

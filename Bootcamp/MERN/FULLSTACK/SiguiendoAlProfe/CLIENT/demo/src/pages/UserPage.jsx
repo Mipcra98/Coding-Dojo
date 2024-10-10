@@ -1,6 +1,7 @@
 import { Avatar, List, ListItem, ListItemAvatar, ListItemText, Typography } from "@mui/material";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 
 
@@ -26,15 +27,17 @@ const UserPage = () => {
             </Typography>
             <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
                 {
-                    users.map((user, index) => {
+                    users.map((item, index) => {
                         return (
                             <ListItem key={index}>
                                 <ListItemAvatar>
-                                    <Avatar>
-                                        {user.email[0].toUpperCase()}
-                                    </Avatar>
+                                    <Link to={`/users/${item._id}`}>
+                                        <Avatar>
+                                            {item.email[0].toUpperCase()}
+                                        </Avatar>
+                                    </Link>
                                 </ListItemAvatar>
-                                <ListItemText primary={user.email} secondary={user.password} />
+                                <ListItemText primary={item.email} secondary={item.password} />
                             </ListItem>
                         )
                     })

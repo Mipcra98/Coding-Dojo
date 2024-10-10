@@ -15,7 +15,7 @@ const PORT = process.env.PORT;
 //Configuraciones
 
 app.use(express.json());    //Soporte para formatos JSOn dentro del servidor
-app.use(cors(                   //Permite que el servidor acepte peticiones de otros dominios
+app.use(cors(                   //Permite que el servidor acepte peticiones de otros dominios, en este caso, se le permite al proyecto Cliente en el puerto 4095
     {
         origin: "http://localhost:4095/"        //Recordar que el puerto puede cambiar en función a cual se elija en el Vite.config
     }
@@ -23,6 +23,7 @@ app.use(cors(                   //Permite que el servidor acepte peticiones de o
 
 //Uso de rutas
 app.use("/api/users", userRoutes)
+
 
 //Conectamos a la Base de Datos desde Mongoose.config.js
 dbConnect();

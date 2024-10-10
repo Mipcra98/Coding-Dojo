@@ -9,13 +9,11 @@ const Register = () => {
     const [formulario, setFormulario] = useState({})
 
     const handleRegister = async () => {
-        try {
-            const response = await axios.post("/api/users", formulario)     //Petición de creación al Backend
-            const data = response.data
-            console.log(data)
-        } catch (error) {
-            console.log(error)
-        }
+
+        const response = await axios.post("/api/users", formulario);     //Petición de creación al Backend
+        const data = response.data;
+        console.log(data);
+
     }
 
     return (
@@ -40,8 +38,8 @@ const Register = () => {
                     onChange={(e) => setFormulario({ ...formulario, password: e.target.value })}
                 />
                 <Button variant="contained" color="primary" onClick={handleRegister}>Registrarse</Button>
+                <Button variant="contained" color="primary" ><Link to="/users">Ver usuarios</Link></Button>
             </Stack>
-            <Link to="/users">Ver usuarios</Link>
         </div>
     )
 }
