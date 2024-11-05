@@ -8,11 +8,11 @@ const URI_MONGODB = process.env.MONGODB_URI;
 const connectDB = async () => {
     try {
         await mongoose.connect(URI_MONGODB, {
-            dbName: "Videogames",
+            dbName: "Videogames"
         });
         console.log("¡Conexión exitosa a MongoDB!");
     } catch (error) {
-        console.error('Error al conectar a MongoDB: ',error);
+        console.error('Error al conectar a MongoDB: ', error);
         throw error;
     }
 }

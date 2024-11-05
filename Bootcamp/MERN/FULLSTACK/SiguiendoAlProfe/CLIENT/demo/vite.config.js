@@ -9,7 +9,7 @@ export default defineConfig({
     proxy: {
       '/api': {
         target: 'http://localhost:4094',
-        changeOrigin: false,
+        changeOrigin: true,
         secure: false,
       },
     },  //El PROXY permite configurar los predijos a las peticiones. por lo tanto el "target" hace referencia a la URI en donde se encuentra corriendo el Servidor

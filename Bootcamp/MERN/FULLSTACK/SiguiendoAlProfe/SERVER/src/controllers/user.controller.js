@@ -3,14 +3,15 @@ import User from "../models/user.model.js";
 
 //Crear usuario
 const crearUser = async (req, res) => {
+    console.log("Creando usuario")
     try {
         const data = req.body;
         const newElement = await User.create(data);
-        res.json(newElement).status(201);
+        res.status(201).json(newElement)
         return;
     } catch (error) {
         console.log(error)
-        res.json(error).status(500)
+        res.status(500).json(error)
         return;
     }
 }
@@ -19,11 +20,11 @@ const crearUser = async (req, res) => {
 const buscarTodos = async (req, res) => {
     try {
         const Elements = await User.find();
-        res.json(Elements).status(200);
+        res.status(200).json(Elements)
         return;
     } catch (error) {
         console.log(error)
-        res.json(error).status(500)
+        res.status(500).json(error)
         return;
     }
 }
@@ -37,11 +38,11 @@ const buscarId = async (req, res) => {
             res.json({ message: "No se encontro el elemento" }).status(404)
             return;
         }
-        res.json(Element).status(200)
+        res.status(200).json(Element)
         return;
     } catch (error) {
         console.log(error)
-        res.json(error).status(500)
+        res.status(500).json(error)
         return;
     }
 }
@@ -53,14 +54,14 @@ const actualizarId = async (req, res) => {
         const { id } = req.params;
         const Element = await User.findByIdAndUpdate(id, data, { new: true, runValidators: true });
         if (!Element) {
-            res.json({ message: "No se encontro el elemento" }).status(404)
+            res.status(404).json({ message: "No se encontro el elemento" })
             return;
         }
-        res.json(Element).status(200);
+        res.status(200).json(Element)
         return;
     } catch (error) {
         console.log(error)
-        res.json(error).status(500)
+        res.status(500).json(error)
         return;
     }
 }
@@ -72,13 +73,13 @@ const eliminarId = async (req, res) => {
         const { id } = req.params;
         const Element = await User.deleteById(id);
         if (!Element) {
-            res.json({ message: "No se encontro el elemento" }).status(404)
+            res.status(404).json({ message: "No se encontro el elemento" })
         }
-        res.json('Se eliminó el elemento correctamente').status(200)
+        res.status(200).json('Se eliminó el elemento correctamente')
         return;
     } catch (error) {
         console.log(error)
-        res.json(error).status(500)
+        res.status(500).json(error)
         return;
     }
 }

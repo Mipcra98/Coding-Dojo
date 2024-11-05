@@ -13,6 +13,7 @@ const Register = () => {
         const response = await axios.post("/api/users", formulario);     //Petición de creación al Backend
         const data = response.data;
         console.log(data);
+        console.log("Registro errado?")
 
     }
 
@@ -37,8 +38,14 @@ const Register = () => {
                     value={formulario.password || ""}
                     onChange={(e) => setFormulario({ ...formulario, password: e.target.value })}
                 />
-                <Button variant="contained" color="primary" onClick={handleRegister}>Registrarse</Button>
-                <Button variant="contained" color="primary" ><Link to="/users">Ver usuarios</Link></Button>
+                <Button variant="contained" color="primary" onClick={handleRegister} >
+                    Registrarse
+                </Button>
+                <Link to="/users">
+                    <Button variant="contained" color="primary" >
+                        Ver usuarios
+                    </Button>
+                </Link>
             </Stack>
         </div>
     )
