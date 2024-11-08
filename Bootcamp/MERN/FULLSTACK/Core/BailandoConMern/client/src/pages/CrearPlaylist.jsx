@@ -2,11 +2,14 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Stack, TextField, Typography, Button, Checkbox, Select, Grid2, FormGroup, FormControlLabel, FormHelperText, FormControl } from '@mui/material'
 import SPHeaders from '../components/SongPlaylistHeader';
+import { useNavigate } from 'react-router-dom';
 
 const CrearPlaylist = () => {
     const [form, setForm] = useState({ nombre: '', canciones: [], checked: false });
     const [canciones, setCanciones] = useState([]);
     const [errores, setErrores] = useState();
+
+    const navegar = useNavigate()
 
     const formSubmit = async (e) => {
         e.preventDefault();
@@ -14,9 +17,10 @@ const CrearPlaylist = () => {
             const response = await axios.post('/api/playlist', form);
             const data = response.data;
             const status = response.status;
-            console.log(data, status);
+            // console.log(data, status);
             setErrores({})
             setForm({ nombre: '', canciones: [], checked: false });
+            navegar('/playlists')
         } catch (error) {
             console.log(error.response.data.error.errors);
             setErrores(error.response?.data?.error.errors)

@@ -5,6 +5,7 @@ import CrearCancion from './pages/CrearCancion'
 import Cancion from './pages/Cancion'
 import Playlists from './pages/Playlists'
 import CrearPlaylist from './pages/CrearPlaylist'
+import Playlist from './pages/Playlist'
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
           <Route path='/songs/:id' Component={Cancion}></Route>
           {/* <Route path='/songs/name/:nombre' element={<h1>Home</h1>}></Route> */}
           <Route path='/playlists/new' Component={CrearPlaylist}></Route>
-          {/* <Route path='/playlists/:id' element={<h1>Contact</h1>}></Route> */}
+          <Route path='/playlists/:id' Component={Playlist}></Route>
           {/* <Route path='/playlists/name/:nombre' element={<h1>Contact</h1>}></Route> */}
           <Route path='/*' element={<h1>404</h1>}></Route>
         </Routes>
