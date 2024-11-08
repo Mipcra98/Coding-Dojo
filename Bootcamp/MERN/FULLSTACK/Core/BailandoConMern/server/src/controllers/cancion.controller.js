@@ -57,7 +57,7 @@ const buscarCancion = async (req, res) => {
 const buscarCancionPorNombre = async (req, res) => {
     const { nombre } = req.params;
     try {
-        const cancion = await Cancion.findOne({ nombre: nombre });
+        const cancion = await Cancion.find({ nombre: nombre });
         if (!cancion) {
             res.status(404).json({ message: `No se encontro la cancion con nombre: ${nombre}` });
             return;
