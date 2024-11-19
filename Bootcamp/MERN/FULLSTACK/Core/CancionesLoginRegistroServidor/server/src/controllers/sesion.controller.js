@@ -44,7 +44,7 @@ const login = async (req, res) => {
         );
 
         //Devolvemos el token
-        res.status(200).cookie('userToken', token, { httpOnly: true }).json({ token });
+        res.status(200).cookie('userToken', token, { httpOnly: true }).json({ message: "Inicio de sesión exitoso" });
 
     } catch (error) {
         res.status(500).json({
